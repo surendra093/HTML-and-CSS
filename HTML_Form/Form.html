@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="form">
+      <h2>Detailed form</h2>
+    </div>
+    <div class="Name"> 
+        <form id="form" action="thankyou.html"  name="myForm" onsubmit="return checkInputs()">
+          <div class="temp" id="name">
+              <h2 class="name">Name</h2>
+              <input class="NAME" type="text" placeholder="Name" id="t1" autocomplete="off"  name="new"/>
+              <!--<label class="flabel">Name</label>--> 
+              <i class="fa fa-check-circle" style="color:green"></i>
+              <i class="fa fa-exclamation-circle" style="color:red"></i>  
+              <small style="color: crimson;">Error message</small>
+          </div>
+
+          <div class="temp">
+            <h2 class="name">Company</h2>
+            <input class="company" type="text" placeholder="Ex:Veenaworld" id="t2" name="company" autocomplete="off">
+            <i class="fa fa-check-circle" style="color:green"></i>
+            <i class="fa fa-exclamation-circle" style="color:red"></i>
+            <small style="color: crimson;">Error message</small>  
+          </div>
+        
+          <div class="temp" id="EMAIl">
+            <h2 class="name">Email</h2>
+            <input class="email" type="email" placeholder="example@gmail.com" id="t3" name="email" required>
+            <i class="fa fa-check-circle" style="color:green"></i>
+            <i class="fa fa-exclamation-circle" style="color:red"></i>
+            <small style="color: crimson;">Error message</small>
+          </div>
+          
+
+          <h2 class="name">PhoneNo:</h2>
+          <select class="code" name="phoneNo">
+              <option >+1</option>
+              <option >+91</option>
+              <option >+93</option>
+              <option >+355</option>
+          </select>
+        
+          <input class="number" type="text" id="t4" name="number" required>
+        <!--  <div class="number"></div>
+            <i class="fa fa-check-circle" style="color:green"></i>
+            <i class="fa fa-exclamation-circle" style="color:red"></i>
+            <small style="color: crimson;">Error message</small>
+          </div>-->
+          
+
+          <h2 id="gender">Gender</h2>
+          <input class="gender" type="radio" name="gender">
+          <label class="gender">Male</label>
+          <input class="gender" type="radio" name="gender">
+          <label class="gender">Female</label>
+
+          <h2 class="name">Date of birth</h2>
+          <input class="bday" type="date" name="bday" required>
+
+          <h2 class="name">Resume</h2>
+          <input class="cv" type="file" name="cv" style="color:honeydew;">
+
+          <h2 class="name">Month and Year of joining</h2>
+          <input class="MandY" type="month" id="MandY" required>
+
+          <h2 class="name">Current Salary(in lpa)</h2>
+          <input class="sal" type="number" id="sal" min="1" required>
+          
+          <br/>
+          <br/>
+          <!--<button type="submit">SUBMIT</button>-->
+          <div id="frm">
+              <input class="Submit" type="submit" id="sbt" name="Submit" value="SUBMIT">
+              <input class="Reset" type="reset" name="Reset" Value="RESET">
+          </div>
+          
+        </form>
+    </div>
+    <script type="text/javascript" src="validation.js"></script>
+    <script type="text/javascript" src="store.js"></script>
+    </body>
+  </body>
+</html>
